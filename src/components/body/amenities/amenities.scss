@@ -1,0 +1,133 @@
+/* amenities */
+
+
+.amenities{
+
+    width: 100%;
+    height: 812px;
+    position: relative;
+
+    .amenities__content{
+
+        width: 1170px;
+        margin: 0 auto;
+        padding-top: 169px;
+
+        .amenities__label{
+
+            font-size: 1.875em;
+            margin-bottom: 80px;
+            display: block;
+
+        }
+
+    }
+
+    .amenities__slider{
+
+        width: auto;
+        height: 392px;
+        padding-left: 130px;
+        padding-right: 130px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        position: relative;
+
+        .amenities__card{
+
+            width: 282px;
+            height: 392px;
+            margin: 0 10px;
+            display: inline-block;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+
+            &:hover .amenities__info{
+
+                bottom: -130px;
+
+            }
+
+        }
+
+        .amenities__card .amenities__info{
+
+            position: absolute;
+            bottom: -240px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            background: linear-gradient(-180deg, rgba(0,0,0,0.01) , rgba(0,0,0,0.6));
+
+        }
+
+        .amenities__card .amenities__info .amenities__name{
+
+            color: #fff;
+            margin: 50px 0;
+            font-weight: 300;
+            font-size: 1.4em;
+
+        }
+
+        .amenities__card .amenities__info .amenities__description{
+
+            color: #fff;
+            white-space: normal;
+
+        }
+
+        
+    }
+
+    .amenities__slider-button{
+
+        position: absolute;
+        background-image: url(../../../img/slider-arrow.jpg);
+        width: 56px;
+        height: 56px;
+        top: 460px;
+        border: 0px;
+        border-radius: 100%;
+
+        &.left{
+
+            left: 40px;
+            transform: rotate(180deg);
+
+        }
+
+        &.right{
+
+            right: 40px;
+
+        }
+    }
+
+}
+
+@media (max-width: 900px){
+
+    .amenities__content{
+
+        width: 100% !important;
+        padding: 100px 20px 0 20px !important;
+
+    }
+
+    .amenities__slider{
+
+        padding: 0 20px !important;
+
+    }
+
+    .amenities__slider-button{
+
+        display: none !important;
+
+    }
+
+}   

@@ -1,0 +1,67 @@
+/* footer */
+.footer {
+  width: 100%;
+  height: 311px;
+  background-color: #1c1c1c; }
+  .footer .footer__content {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 66px 0px; }
+    .footer .footer__content .footer__logo {
+      width: 72px;
+      height: 39px;
+      float: right; }
+    .footer .footer__content .footer__text {
+      float: left;
+      margin-right: 20px; }
+      .footer .footer__content .footer__text h3, .footer .footer__content .footer__text h5 {
+        font-weight: 300;
+        color: #fff; }
+    .footer .footer__content .footer__sns-icon {
+      height: 38px;
+      width: 38px;
+      float: left;
+      margin: 30px 20px; }
+      .footer .footer__content .footer__sns-icon.icon--facebook {
+        background-image: url(../../../img/fb-icon.png); }
+      .footer .footer__content .footer__sns-icon.icon--instagram {
+        background-image: url(../../../img/insta-icon.png); }
+    .footer .footer__content .footer__navs {
+      width: 100%;
+      height: 39px;
+      display: inline-block;
+      position: relative;
+      bottom: -50px; }
+      .footer .footer__content .footer__navs .footer__links {
+        height: 39px;
+        padding: 12.5px 0;
+        margin: 0;
+        list-style: none; }
+        .footer .footer__content .footer__navs .footer__links.footer--left {
+          float: left; }
+        .footer .footer__content .footer__navs .footer__links.footer--right {
+          float: right; }
+      .footer .footer__content .footer__navs .footer__links .footer__item {
+        display: inline-block;
+        font-size: 0.875em;
+        margin-right: 37px; }
+        .footer .footer__content .footer__navs .footer__links .footer__item a, .footer .footer__content .footer__navs .footer__links .footer__item p {
+          margin: 0;
+          color: #fff !important; }
+        .footer .footer__content .footer__navs .footer__links .footer__item:last-child {
+          margin: 0; }
+      .footer .footer__content .footer__navs .footer__links .footer__item:hover {
+        text-decoration: underline; }
+
+@media (max-width: 800px) {
+  .footer__content {
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important; } }
+
+@media (max-width: 500px) {
+  .footer__navs {
+    display: none !important; }
+  .footer__logo, .footer__text {
+    float: none !important;
+    margin: 0 auto !important; } }

@@ -1,0 +1,238 @@
+/* rooms */
+
+.rooms{
+
+    width: 100%;
+    height: 510px;
+
+    .rooms__content{
+
+        width: 1170px;
+        height: 548px;
+        margin: 0 auto;
+        position: relative;
+
+        .rooms__list{
+
+            width: 1314px;
+            height: 443px;
+            position: absolute;
+            left: 0;
+            top: -88px;
+
+            .rooms__card{
+
+                width: 438px;
+                height: 443px;
+                background: #000;
+                display: inline-block;
+                overflow: hidden;
+                position: relative;
+
+                &:hover .rooms__info{
+
+                    bottom: 0 !important;
+                    background: linear-gradient(-180deg, rgba(0,0,0,0.9) , rgba(0,0,0,0.6));
+                
+                }
+
+            }
+
+            .rooms__card .rooms__image{
+
+                position: absolute;
+
+            }
+
+            .rooms__card .rooms__info{
+
+                position: absolute;
+                bottom: -71%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 40px;
+                background: linear-gradient(-180deg, rgba(0,0,0,0.01) , rgba(0,0,0,0.6));
+
+            }
+
+            .rooms__card .rooms__info .rooms__name{
+
+                color: #fff;
+                font-weight: 300;
+                margin: 10px 0;
+
+            }
+
+            .rooms__card .rooms__info .rooms__rating{
+
+                width: calc(100% - 80px);
+                height: 50px;
+                position: absolute;
+                bottom: 40px;
+
+            }
+
+            .rooms__card .rooms__info .rooms__rating .rooms__rate{
+
+                width: calc(15px * 5px);
+                height: 15px;
+
+            }
+
+            .rooms__card .rooms__info .rooms__rating .rooms__rate .rooms__star{
+
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin-right: 15px;
+                background: url(../../../img/star.png);
+
+            }
+
+            .rooms__card .rooms__info .rooms__rating .rooms__reviews{
+
+                color: #fff;
+                margin: 10px 0px;
+
+            }
+
+            .rooms__card .rooms__info .rooms__rating .rooms__views{
+
+                
+                color: #fff;
+                margin: 10px 0px;
+                padding: 10px;
+
+            }
+
+            .rooms__card .rooms__info .rooms__rating .rooms__view-button{
+
+                color: #fff;
+                position: absolute;
+                right: 10px;
+                bottom: -3px;
+                display: block;
+                margin: 10px 0;
+
+            }
+
+
+        }
+
+        .rooms__bottom-link{
+
+            width: 100%;
+            height: 61px;
+            position: absolute;
+            bottom: 70px;
+            padding: 0 20px;
+
+            .rooms__button-more{
+    
+                width: 220px;
+                height: 61px;
+                font-size: 1.125em;
+                display: block;
+                padding: 20px 0;
+                float: right;
+
+    
+                .rooms__button-arrow{
+    
+                    position: relative;
+                    bottom: 20px;
+                    right: -100px;
+                    display: block;
+                    width: 29px;
+                    height: 20px;
+                    background-image: url(../../../img/arrow.png);
+    
+                }
+    
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 900px){
+
+    .rooms__content{
+
+        width: 100% !important;
+        padding: 0 20px !important; 
+
+        .rooms__list{
+
+            width: 100% !important;
+            padding: 0 20px !important;
+            
+            .rooms__card{
+    
+                width: 33.33% !important;
+                height: 339px !important;
+    
+            }
+
+            .rooms__info{
+
+                bottom: -65% !important;
+
+            }
+
+        }
+
+        .rooms__bottom-link{
+
+            width: 100%;
+            bottom: 200px;
+
+        }
+
+
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .rooms{
+
+        height: auto;
+
+        .rooms__content{
+
+            height: auto;
+
+        }
+
+        .rooms__list{
+    
+            position: static !important;
+            height: auto !important;
+            padding: 0px !important;
+    
+            .rooms__card{
+    
+                display: block !important;
+                margin-bottom: 20px;
+                width: 100% !important;
+    
+            }
+    
+        }
+    
+        .rooms__bottom-link{
+    
+            width: 100% !important;
+            position: static !important;
+            padding: 0px !important;
+    
+        }
+
+    }
+
+
+}
