@@ -43,7 +43,7 @@
         position: absolute;
         bottom: 40px; }
       .rooms .rooms__content .rooms__list .rooms__card .rooms__info .rooms__rating .rooms__rate {
-        width: calc(15px * 5px);
+        width: calc(15px * 10px);
         height: 15px; }
       .rooms .rooms__content .rooms__list .rooms__card .rooms__info .rooms__rating .rooms__rate .rooms__star {
         display: inline-block;
