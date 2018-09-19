@@ -129,7 +129,7 @@
         .navbar__navs{
 
             opacity: 0;
-            width: 40%;
+            width: 40% !important;
             height: calc(100vh - 80px) !important;
             background: #fff;
             position: absolute;
@@ -184,7 +184,7 @@
 
 @media (max-width: 500px){
 
-    .navbar__navs{
+    .navbar__navs.xs{
 
         width: 100% !important;
         overflow-y: auto !important;
@@ -192,7 +192,7 @@
         right: 0 !important;
         top: -100% !important;
 
-        &.active{
+        &.active.xs{
             top: 80px !important;
             right: 0 !important;
         }

@@ -21,8 +21,8 @@ class NavBar extends Component{
             <nav className="navbar">
                 <div className="navbar__center">
                     <img className="navbar__logo" src={Logo} />
-                     <div className={this.state.isMenuShown ? 'navbar__navs active' : 'navbar__navs' }>
-                        <ul className="navbar__links navbar--left">
+                     <div className={this.state.isMenuShown ? 'navbar__navs xs active ' : 'navbar__navs xs' }>
+                        <ul className="navbar__links xs navbar--left ">
                             <li className="navbar__item"><a href="#">Home</a></li>
                             <li className="navbar__item"><a href="#">Rooms</a></li>
                             <li className="navbar__item"><a href="#">Reservation</a></li>
